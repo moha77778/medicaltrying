@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Information</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f7f9fb;
+        }
+        h2, h3, h4 {
+            color: #2c3e50;
+        }
+        em, strong {
+            color: #2980b9;
+        }
+        header, footer {
+            background-color: #2980b9;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        /* Layout and Spacing */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        /* Lists and Tables */
+        ol {
+            padding-left: 20px;
+            margin: 0;
+            list-style-type: decimal;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        caption {
+            font-weight: bold;
+            color: #333;
+            padding: 5px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+
+        /* Forms */
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label, input, textarea, select {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+        }
+        input, textarea, select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-top: 5px;
+            font-size: 1em;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 8px;
+        }
+        textarea {
+            resize: vertical;
+        }
+
+        /* Buttons */
+        button {
+            padding: 10px 20px;
+            margin: 10px 5px 0 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            color: white;
+            background-color: #2980b9;
+        }
+        button:hover {
+            background-color: #1f648b;
+        }
+        button[type="reset"] {
+            background-color: #e74c3c;
+        }
+        button[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+
+        /* Image */
+        img {
+            display: block;
+            max-width: 100%;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        /* Links */
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Welcome to Our Medical Information Page</h2>
+</header>
+
+<div class="content">
+    <section>
+        <h3><em><strong>Medical Information</strong></em></h3>
+        <hr/>
+        <h4>Our Doctors</h4>
+        <ol>
+            <li>Mohammed</li>
+            <li>Ahmad</li>
+            <li>Khalid</li>
+            <li>Lana</li>
+            <li>Noor</li>
+        </ol>
+
+        <h4>Locations of Our Clinics</h4>
+        <ol>
+            <li>Amman</li>
+            <li>Irbid</li>
+            <li>Ajloon</li>
+            <li>Abdoun</li>
+        </ol>
+    </section>
+
+    <section>
+        <hr/>
+        <h4>Advertisements</h4>
+        <ol>
+            <li><a href="#" target="_blank">The First Ad</a></li>
+            <li><a href="#" target="_blank">The Second Ad</a></li>
+            <li><a href="#" target="_blank">The Third Ad</a></li>
+        </ol>
+        <img src="Free-Images-Medical.JPG" alt="Medical Image"/>
+    </section>
+
+    <section>
+        <form method="post" action="">
+            <h4>Contact Form</h4>
+            <div class="form-group">
+                <label for="name">Enter Your Name:</label>
+                <input type="text" id="name" name="name" maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Enter Your Password:</label>
+                <input type="password" id="password" name="password" maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Enter Your Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Write Your Comment Here:</label>
+                <textarea id="comment" rows="5"></textarea>
+            </div>
+
+            <h4>Gender</h4>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female" checked> Female</label>
+
+            <h4>Have You Tried Any of Our Doctors?</h4>
+            <label><input type="checkbox" name="doctor" value="mohammed"> Mohammed</label>
+            <label><input type="checkbox" name="doctor" value="ahmad"> Ahmad</label>
+            <label><input type="checkbox" name="doctor" value="khalid"> Khalid</label>
+            <label><input type="checkbox" name="doctor" value="lana"> Lana</label>
+            <label><input type="checkbox" name="doctor" value="noor"> Noor</label>
+
+            <h4>Have You Visited Any of Our Clinics?</h4>
+            <label><input type="checkbox" name="location" value="Irbid"> Irbid</label>
+            <label><input type="checkbox" name="location" value="Amman"> Amman</label>
+            <label><input type="checkbox" name="location" value="Ajloon"> Ajloon</label>
+            <label><input type="checkbox" name="location" value="Abdoun"> Abdoun</label>
+
+            <div class="form-group">
+                <label for="doctor-select">Choose Your Preferred Doctor:</label>
+                <select id="doctor-select" name="doctor-select">
+                    <option value="mohammed">Mohammed</option>
+                    <option value="ahmad">Ahmad</option>
+                    <option value="khalid">Khalid</option>
+                    <option value="lana">Lana</option>
+                    <option value="noor" selected>Noor</option>
+                </select>
+            </div>
+
+            <table>
+                <caption>Doctors' Contact Information</caption>
+                <tr>
+                    <th>Doctor</th>
+                    <th>Contact Number</th>
+                </tr>
+                <tr>
+                    <td>Mohammed</td>
+                    <td>0784347893, 0794873564</td>
+                </tr>
+                <tr>
+                    <td>Ahmad</td>
+                    <td>0788374526</td>
+                </tr>
+                <tr>
+                    <td>Khalid</td>
+                    <td>0788384787</td>
+                </tr>
+                <tr>
+                    <td>Lana</td>
+                    <td>0788374526</td>
+                </tr>
+                <tr>
+                    <td>Noor</td>
+                    <td>0788374526, 0773536473</td>
+                </tr>
+            </table>
+
+            <div style="margin-top: 20px;">
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2023 Medical Information. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
